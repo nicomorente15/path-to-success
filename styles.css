@@ -1,0 +1,108 @@
+/* CSS BY NAME [Nico Morente] */
+body{
+    max-width: 450px;
+    background-color: #484FB7;
+}
+
+/* Header */
+header{
+    text-align: center;
+    color: #ffffff;
+}
+
+h1{
+    padding: .5em;
+    padding-bottom: .2em;
+    font-size: 3em;
+}
+
+header p{
+    font-size: .8em;
+}
+
+main h2{
+    font-size: 2em;
+    color: white;
+}
+
+/* Nav */
+nav{
+    background-color: #E9BB57;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+nav h2{
+    font-size: 1.5em; 
+    text-align: center;
+    color: #111111;
+    padding: .2em;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+nav ul li{
+    background-color: #ffffff;
+    margin: .5em 1em;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 2em;
+    margin-left: 3%;
+}
+
+h3{
+    color: #E9BB57;
+    font-size: 1.5em;
+    background-color: #484FB7;
+    margin-left: 3%;
+}
+
+h4{
+    font-size: 1.15em;
+}
+
+section h3{
+    margin-bottom: .3em;
+}
+
+table{
+    background-color: #E9BB57;
+    text-align: center;
+    margin-left: 20%;
+    width: 250px;
+    margin-bottom: .3em;
+}
+
+tr.content{
+    background-color: #ffffff;
+}
+
+th{
+    border: 1px solid #E9BB57;
+    padding: .8em;
+}
+
+.box{
+    margin: 1em;
+    background-color: #ffffff;
+    border-radius: 3.5%;
+    padding: 2em;
+}
+
+.Pink {
+    background-color: #D9526F;
+}
+
+.Pink h2,.Pink p{
+    color: #ffffff;
+}
