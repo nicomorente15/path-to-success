@@ -1,108 +1,278 @@
+/* IMPORTED FONTS */
+@import "font.css";
+
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 /* CSS BY NAME [Nico Morente] */
 body{
-    max-width: 450px;
     background-color: #484FB7;
+    font-family: Inter;
 }
+
+/* GLOBAL STYLES (mobile first/small) */
+@media screen and (min-width: 450px) {
 
 /* Header */
-header{
-    text-align: center;
-    color: #ffffff;
-}
+    header{
+        text-align: center;
+        color: #ffffff;
+    }
 
-h1{
-    padding: .5em;
-    padding-bottom: .2em;
-    font-size: 3em;
-}
+    h1{
+        padding: .5em;
+        padding-bottom: .2em;
+        font-size: 3em;
+        font-family: Kavoon;
+    }
 
-header p{
-    font-size: .8em;
-}
+    header p{
+        font-size: .8em;
+    }
 
-main h2{
-    font-size: 2em;
-    color: white;
-}
+    main h2{
+        font-size: 2em;
+        color: white;
+    }
+
+/* Main */
+    img{
+        width: 85px;
+        height: 85px;
+    }
+
+    h2{
+        font-size: 2em;
+        margin-left: 3%;
+        font-family: Kavoon;
+        padding-bottom: .1em;
+    }
+
+    p{
+        line-height: 1.5;
+        padding: .5em 0;
+        word-spacing: 1/4;
+    }
+
+    h3{
+        color: #E9BB57;
+        font-size: 1.5em;
+        background-color: #484FB7;
+        margin-left: 3%;
+        font-weight: 600;
+        margin-bottom: .3em;
+    }
+
+    h4{
+        font-size: 1.15em;
+        color: #484FB7;
+        font-weight: 500;
+        padding: .5em 0;
+    }
 
 /* Nav */
-nav{
-    background-color: #E9BB57;
-    margin-top: 2em;
-    margin-bottom: 1em;
-}
+    nav{
+        background-color: #E9BB57;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
 
-nav h2{
-    font-size: 1.5em; 
-    text-align: center;
-    color: #111111;
-    padding: .2em;
-}
+    nav h2{
+        font-family: Inter;
+        font-size: 1.5em; 
+        text-align: center;
+        color: #111111;
+        padding: .6em .5em .1em;
+        font-weight: 600;
+        font-style: italic;
+    }
 
-nav ul{
-    list-style: none;
-    text-align: center;
-    padding-bottom: 1em;
-}
+    nav ul{
+        list-style: none;
+        text-align: center;
+        padding-bottom: 1em;
+    }
 
-nav ul li{
-    background-color: #ffffff;
-    margin: .5em 1em;
-    padding: 10px;
-}
+    nav ul li{
+        background-color: #ffffff;
+        margin: .3em 1em;
+        width: 100%;
+        padding: 12px;
+        font-size: .8em;
+        font-weight: 750;
+        font-style: bold;
+    }
 
-nav ul li a{
-    text-decoration: none;
-}
+    nav ul li a{
+        text-decoration: none;
+    }
 
-h2{
-    font-size: 2em;
-    margin-left: 3%;
-}
+/* Why Choose Us */
+    section.Reason {
+        background-color: #D9526F;
+    }
 
-h3{
-    color: #E9BB57;
-    font-size: 1.5em;
-    background-color: #484FB7;
-    margin-left: 3%;
-}
+    .Reason h2{
+        padding: .5em 0;
+    }
+    
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 5px;
+    }
 
-h4{
-    font-size: 1.15em;
-}
+    .Reason li{
+        font-size: 1em;
+        text-align: center;
+        padding: 20px 20px 40px;
+        font-weight: 600;
+        margin: 10px;
+        width: 35%;
+        border-radius: 1em;
+    }
 
-section h3{
-    margin-bottom: .3em;
-}
+    .Reason li.teal{
+        background-color: #4CA7C0;
+    }
+    .Reason li.lavender{
+        background-color: #6B8FE7;
+    }
 
-table{
-    background-color: #E9BB57;
-    text-align: center;
-    margin-left: 20%;
-    width: 250px;
-    margin-bottom: .3em;
-}
+    .Reason li.yellow{
+        background-color: #E9BB57;
+    }
 
-tr.content{
-    background-color: #ffffff;
-}
+    .Reason li.white{
+        background-color: #ffffff;
+    }
 
-th{
-    border: 1px solid #E9BB57;
-    padding: .8em;
-}
+/* Chart */
+/* Table */
+    #chart h2{
+        margin-top: .5em;
+    }
 
-.box{
-    margin: 1em;
-    background-color: #ffffff;
-    border-radius: 3.5%;
-    padding: 2em;
-}
+    table{
+        background-color: #E9BB57;
+        text-align: center;
+        margin-left: 20%;
+        width: 250px;
+        margin-bottom: .3em;
+    }
 
-.Pink {
-    background-color: #D9526F;
-}
+    tr.content{
+        background-color: #ffffff;
+    }
 
-.Pink h2,.Pink p{
-    color: #ffffff;
+    th{
+        border: 1px solid #E9BB57;
+        padding: .8em;
+    }
+
+    .box{
+        margin: 1em;
+        background-color: #ffffff;
+        border-radius: 3.5%;
+        padding: 2em;
+    }
+
+/* Footer */
+/* Take the First Step Today */
+    footer{
+        color: #ffffff;
+        margin-top: .5em;
+    }
+
+    footer section.Schedule{
+        background-color: #D9526F;
+        height: 235px;
+    }
+
+    footer section.Schedule h2{
+        padding: .5em 0 0;
+    }
+
+    footer section.Schedule p{
+        margin: .5em .5em;
+        padding: 0 .5em;
+    }
+
+    div.Button{
+        padding: 10px;
+        text-align: center;
+    }
+
+    div.Button a{
+        background-color: #ffffff;
+        border: 1px solid #111111;
+        color: #111111;
+        text-decoration: none;
+        font-size: .8em;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 18px 140px;
+        margin: 10px;
+        box-shadow: 2px 2px #111111;
+    }
+
+
+/* Copyright */
+    .Copyright{
+        display: flex;
+    }
+
+    .Copyright div {
+        font-size: .2em;
+        text-align: center;
+        padding: 40px;
+        width: 50%;
+    }
+
+    .Copyright div a{
+        color: #ffffff;
+    }
 }
